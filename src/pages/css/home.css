@@ -1,0 +1,67 @@
+.component-home-top .jumbotron {
+  background-image: url("https://stmed.net/sites/default/files/styles/1920x1080/public/airport-wallpapers-28369-9278667.jpg?itok=q2GZFCAp");
+  height: 700px;
+  margin-bottom: 0;
+}
+
+.component-home-top .flight-form {
+  margin: auto;
+}
+
+.component-home-alert .alert-container {
+  background-color: #FFC700;
+  padding: 10px;
+}
+
+.component-home-alert .alert-container p {
+  font-size: 20px;
+}
+
+.component-home-about {
+  padding-bottom: 500px;
+}
+
+.component-home-about .col-sm {
+  padding: 0;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  margin: 0;
+}
+
+.flight-form {
+  width: 88%;
+}
+
+.component-home-about .row {
+  margin: 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.component-home-about .about-entry img {
+  height: 150px;
+}
+
+.component-home-about img {
+  width: 100%;
+}
+
+.component-home-about .col-sm p {
+  margin: auto 35px;
+}
+
+@media only screen and (min-width: 768px) {
+  .component-home-top .flight-form {
+    width: 50%;
+  }
+}
+
