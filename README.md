@@ -15,4 +15,4 @@ Hi! This is a website in a similar vein as Expedia. Load up the page, type in pa
 Well if you want to check this out, I'm keeping track of all the big updates I do on my new YouTube channel built primarily for this purpose! Come check it out here: https://www.youtube.com/playlist?list=PLTbOijtc8Y-LAi9j83ZUpgna6SqdYTpSj 
 
 ## To run the code
-Open up command prompt, navigate to the directory this is stored, then type ```npm init``. It should download all the proper packages to launch. Then type ```npm start``` to start the server. If it does not open right away, go to your browser and type ```localhost:3000``` this should open up the website!
+Open up command prompt, navigate to the directory this is stored, then type ```npm init```. It should download all the proper packages to launch. Then type ```npm start``` to start the server. If it does not open right away, go to your browser and type ```localhost:3000``` this should open up the website!
