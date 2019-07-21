@@ -55,3 +55,14 @@
     border: none;
   }
 }
+
+.component-footer {
+  background-color: #A9A9A9;
+  min-height: 200px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.component-footer .row {
+  width: 100%;
+}

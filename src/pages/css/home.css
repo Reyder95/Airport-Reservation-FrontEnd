@@ -17,10 +17,6 @@
   font-size: 20px;
 }
 
-.component-home-about {
-  padding-bottom: 500px;
-}
-
 .component-home-about .col-sm {
   padding: 0;
   width: 100%;
@@ -52,7 +48,7 @@
 }
 
 .component-home-about img {
-  width: 100%;
+  width: 200%;
 }
 
 .component-home-about .col-sm p {
@@ -62,6 +58,18 @@
 @media only screen and (min-width: 768px) {
   .component-home-top .flight-form {
     width: 50%;
+  }
+}
+
+@media only screen and (min-width: 319px) {
+  .component-home-about img {
+    width: 222%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .component-home-about img {
+    width: 100%;
   }
 }
 

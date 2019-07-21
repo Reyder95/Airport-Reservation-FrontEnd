@@ -7,7 +7,7 @@ class HomeAbout extends React.Component {
         
         <div className="container-fluid">
           <div className="row">
-            <div className="col-sm">
+            <div className="col-sm order-2 order-md-1">
               <p>
                 <h3>We're here to help.</h3>
                 Whether you are having trouble with a purchase or need some guidance, our customer service representatives are available
@@ -15,7 +15,7 @@ class HomeAbout extends React.Component {
               </p>
             </div>
             
-            <div className="col-sm">
+            <div className="col-sm order-1 order-md-2">
               <img src="https://assets.khoros.com/content/resource-images/7-customer-service-strategies-image.png" alt="Work Team" />
             </div>
 
@@ -35,7 +35,7 @@ class HomeAbout extends React.Component {
           </div>
           
           <div className="row">
-            <div className="col-sm">
+            <div className="col-sm order-2 order-md-1">
               <p>
                 <h3>We go bigger.</h3>
                 We're working hard on our own airline! Please leave us emails with inquiries on features you'd like to see, and perhaps some gripes
@@ -43,7 +43,7 @@ class HomeAbout extends React.Component {
               </p>
             </div>
             
-            <div className="col-sm">
+            <div className="col-sm order-1 order-md-2">
               <img src="https://thewallpaper.co//wp-content/uploads/2016/02/hd-plane-wallpapers-sky-speed-vehicle-download-free-aircraft-images-airplane-photos-high-resolution-airplanes-1920x1080.jpg" alt="Work Team" />
             </div>
 

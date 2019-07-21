@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 import Home from './pages/home.jsx';
+import FlightList from './pages/flight-list.jsx';
 
 import './pages/css/global.css';
 
@@ -43,6 +44,7 @@ class App extends React.Component {
             
             <Switch>
               <Route exact path="/" component={Home}/>
+              <Route path="/flight-list" component={FlightList}/>
             </Switch>
           </Router>
         );
