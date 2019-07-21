@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, Redirect, Switch } from 'react-router-dom' // Importing the router
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom' // Importing the router
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
@@ -10,7 +10,7 @@ import './pages/css/global.css';
 
 function openNav() {
   
-  if (document.getElementById('open-nav').style.display == 'block') {
+  if (document.getElementById('open-nav').style.display === 'block') {
     document.getElementById('open-nav').style.display = 'none';
   }
   else {

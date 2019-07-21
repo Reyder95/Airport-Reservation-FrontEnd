@@ -8,11 +8,11 @@ class HomeAbout extends React.Component {
         <div className="container-fluid">
           <div className="row">
             <div className="col-sm order-2 order-md-1">
-              <p>
+              <span>
                 <h3>We're here to help.</h3>
                 Whether you are having trouble with a purchase or need some guidance, our customer service representatives are available
                 24/7. We know the struggles and strive to be the best we can be when handling your problems!
-              </p>
+              </span>
             </div>
             
             <div className="col-sm order-1 order-md-2">
@@ -27,20 +27,20 @@ class HomeAbout extends React.Component {
             </div>
             
             <div className="col-sm">
-              <p>
+              <span>
                 <h3>We connect you.</h3>
                 Our databases are jam packed full of information of various airports and the flights they are managing. Look no further in finding the perfect flight. Just type in your needs, and we will give you the flights that suit your preferences.
-              </p>
+              </span>
             </div>
           </div>
           
           <div className="row">
             <div className="col-sm order-2 order-md-1">
-              <p>
+              <span>
                 <h3>We go bigger.</h3>
                 We're working hard on our own airline! Please leave us emails with inquiries on features you'd like to see, and perhaps some gripes
                 with the current world's leading airlines. We always aim to be bigger and better than before.
-              </p>
+              </span>
             </div>
             
             <div className="col-sm order-1 order-md-2">

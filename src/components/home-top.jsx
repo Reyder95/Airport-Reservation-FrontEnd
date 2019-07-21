@@ -1,5 +1,5 @@
 import React from 'react'
-import { Redirect, Link } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 
 class HomeTop extends React.Component {
   
@@ -42,7 +42,7 @@ class HomeTop extends React.Component {
       type: e.target.value
     });
     
-    if (e.target.value == 'oneway') {
+    if (e.target.value === 'oneway') {
       this.setState({
         isReturnVisible: false
       });
@@ -70,7 +70,7 @@ class HomeTop extends React.Component {
     let link = '/flight-list';
     
     if(this.state.origin && this.state.destination && this.state.departing && this.state.type) {
-      if ((this.state.type == 'roundtrip' && this.state.returning) || (this.state.type == 'oneway' && !(this.state.returning))) {
+      if ((this.state.type === 'roundtrip' && this.state.returning) || (this.state.type === 'oneway' && !(this.state.returning))) {
         link += `?origin=${this.state.origin}&destination=${this.state.destination}&departing=${this.state.departing}&type=${this.state.type}`;
         
         if (this.state.returning) {
@@ -94,8 +94,6 @@ class HomeTop extends React.Component {
   
   render() {
   
-    const { link } = this.state.link;
-  
     if (this.state.redirect) {
       return <Redirect push to={this.state.link} />;
     }
@@ -110,23 +108,23 @@ class HomeTop extends React.Component {
                 <div className="row">
                   <div className="col-sm">
                     <div className="form-group origin">
-                      <label className="text-light" for="origin-airport">Origin:</label>
+                      <label className="text-light" htmlFor="origin-airport">Origin:</label>
                       <input onChange={this.setOrigin} value={this.state.origin} type="text" className="form-control" id="origin-airport" placeholder="Enter Origin"/>
                     </div>
                   </div>
                   
                   <div className="col-sm">
                     <div className="form-group destination">
-                      <label className="text-light" for="destination-airport">Destination:</label>
+                      <label className="text-light" htmlFor="destination-airport">Destination:</label>
                       <input onChange={this.setDestination} value={this.state.destination} type="text" className="form-control" id="destination-airport" placeholder="Enter Destination"/>
                     </div>
                   </div>
                 </div>
                 
                 <div className="form-group type">
-                  <label className="text-light" for="type">Type:</label>
+                  <label className="text-light" htmlFor="type">Type:</label>
                   <select onChange={this.setType} value={this.state.type} className="form-control" id="type">
-                    <option disabled selected value="">Roundtrip or One Way</option>
+                    <option disabled value="">Roundtrip or One Way</option>
                     <option value="roundtrip">Roundtrip</option>
                     <option value="oneway">One Way</option>
                   </select>
@@ -135,14 +133,14 @@ class HomeTop extends React.Component {
                 <div className="row">
                   <div className="col-sm">
                     <div className="form-group departing-date">
-                      <label className="text-light" for="departing-date">Departing:</label>
+                      <label className="text-light" htmlFor="departing-date">Departing:</label>
                       <input onChange={this.setDepartDate} value={this.state.departing} type="date" className="form-control" id="departing-date"/>
                     </div>
                   </div>
                   
                   <div className="col-sm">
                     <div className={`form-group returning-date ${this.state.isReturnVisible ? 'd-block' : 'd-none'}`}>
-                      <label className="text-light" for="returning-date">Returning:</label>
+                      <label className="text-light" htmlFor="returning-date">Returning:</label>
                       <input onChange={this.setReturnDate} value={this.state.returning} type="date" className="form-control" id="departing-date" />
                     </div>
                   </div>
