@@ -25,6 +25,7 @@
   justify-content: center;
   display: flex;
   align-items: center;
+  background-color: #FFFFFF;
 }
 
 .container {
@@ -57,7 +58,7 @@
 
 @media only screen and (min-width: 768px) {
   .component-home-top .flight-form {
-    width: 50%;
+    width: 75%;
   }
 }
 
@@ -70,6 +71,10 @@
 @media only screen and (min-width: 1025px) {
   .component-home-about img {
     width: 100%;
+  }
+  
+  .component-home-top .flight-form {
+    width: 50%;
   }
 }
 

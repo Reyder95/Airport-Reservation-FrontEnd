@@ -1,0 +1,114 @@
+.main-list {
+  margin: 0 25px;
+}
+
+.component-flight-card {
+  min-height: 100px;
+  padding-top: 10px;
+  background-color: #FFFFFF;
+  opacity: 0.7;
+  transition: 0.2s;
+}
+
+.component-flight-card {
+  position: relative;
+}
+
+.flight-card-price {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  margin-right: 10px;
+}
+
+.flight-card-company,
+.flight-card-length {
+  font-size: 13px;
+  color: #676464;
+}
+
+.flight-list-header {
+  background-color: #FFFFFF;
+  padding: 15px;
+}
+
+.component-flight-card .row {
+  display: block;
+}
+
+.component-flight-card .flight-card-reviews {
+  font-size: 13px;
+  display: none;
+}
+
+.flight-card-filter {
+  display: block;
+}
+
+.filter-and-sort-header {
+  display: none;
+}
+
+.filter-and-sort-form {
+  display: none;
+}
+
+.filter-and-sort-form .form-check {
+  font-size: 13px;
+}
+
+.component-flight-card:hover {
+  opacity: 1.0;
+  transition: 0.2s;
+}
+
+@media only screen and (min-width: 319px) {
+  .component-flight-card .flight-card-reviews {
+    width: 75%;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 408px) {
+  .component-flight-card .row {
+    display: flex;
+  }
+  
+  .component-flight-card .row h6 {
+    padding-top: 2px;
+  }
+  
+  .component-flight-card .flight-card-length {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .filter-and-sort-form {
+    display: block;
+  }
+  
+  .filter-and-sort-header {
+  display: block;
+}
+  
+  .filter-and-sort-button {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1023px) {
+  .component-flight-list {
+    margin: 0 80px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .component-flight-list {
+    margin: 0 400px;
+  }
+  
+  .flight-card-filter {
+    display: block;
+  }
+}
