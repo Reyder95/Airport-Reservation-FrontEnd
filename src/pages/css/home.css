@@ -1,5 +1,10 @@
 .component-home-top .jumbotron {
-  background-image: url("https://stmed.net/sites/default/files/styles/1920x1080/public/airport-wallpapers-28369-9278667.jpg?itok=q2GZFCAp");
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  ), 
+  
+  url("https://stmed.net/sites/default/files/styles/1920x1080/public/airport-wallpapers-28369-9278667.jpg?itok=q2GZFCAp");
   height: 700px;
   margin-bottom: 0;
 }
@@ -9,7 +14,7 @@
 }
 
 .component-home-alert .alert-container {
-  background-color: #FFC700;
+  background-color: #FFDA00;
   padding: 10px;
 }
 
@@ -74,7 +79,7 @@
   }
   
   .component-home-top .flight-form {
-    width: 50%;
+    width: 40%;
   }
 }
 

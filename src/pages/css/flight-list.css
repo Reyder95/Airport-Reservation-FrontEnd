@@ -105,6 +105,16 @@
 
 @media only screen and (min-width: 1025px) {
   .component-flight-list {
+    margin: 0 200px;
+  }
+  
+  .flight-card-filter {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .component-flight-list {
     margin: 0 400px;
   }
   

@@ -44,7 +44,8 @@ class HomeTop extends React.Component {
     
     if (e.target.value === 'oneway') {
       this.setState({
-        isReturnVisible: false
+        isReturnVisible: false,
+        returning: ''
       });
     } else {
       this.setState({
@@ -131,17 +132,17 @@ class HomeTop extends React.Component {
                 </div>
                 
                 <div className="row">
-                  <div className="col-sm">
+                  <div className="col-sm col-12-md">
                     <div className="form-group departing-date">
                       <label className="text-light" htmlFor="departing-date">Departing:</label>
                       <input onChange={this.setDepartDate} value={this.state.departing} type="date" className="form-control" id="departing-date"/>
                     </div>
                   </div>
                   
-                  <div className="col-sm">
-                    <div className={`form-group returning-date ${this.state.isReturnVisible ? 'd-block' : 'd-none'}`}>
+                  <div className="col-sm col-0-md">
+                    <div className={`form-group returning-date`}>
                       <label className="text-light" htmlFor="returning-date">Returning:</label>
-                      <input onChange={this.setReturnDate} value={this.state.returning} type="date" className="form-control" id="departing-date" />
+                      <input onChange={this.setReturnDate} value={this.state.returning} type="date" className="form-control" id="departing-date" disabled={!this.state.isReturnVisible}/>
                     </div>
                   </div>
                 </div>
