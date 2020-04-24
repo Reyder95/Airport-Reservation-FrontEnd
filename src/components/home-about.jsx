@@ -16,7 +16,7 @@ class HomeAbout extends React.Component {
             </div>
             
             <div className="col-sm order-1 order-md-2">
-              <img src="https://assets.khoros.com/content/resource-images/7-customer-service-strategies-image.png" alt="Work Team" />
+              <img src="https://www.business.com/images/content/5e2/6ff7d9c658afb418b456a/1500-0-" alt="Work Team" />
             </div>
 
           </div>
